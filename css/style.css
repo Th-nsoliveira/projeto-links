@@ -106,8 +106,9 @@ img{
       display: block;
     }
 
-    body{
-        overflow:visible;
+    div{
+        margin: 25px auto;
+
     }
     
 }
