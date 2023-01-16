@@ -105,6 +105,9 @@ img{
     #app{
         display:block;
     }
+    body{
+        overflow: auto;
+    }
     
 }
 
