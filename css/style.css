@@ -106,7 +106,7 @@ img{
         display:block;
     }
     body{
-        overflow: auto;
+        overflow:scroll;
     }
     
 }
