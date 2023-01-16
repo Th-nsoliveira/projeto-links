@@ -1,0 +1,110 @@
+/* Folha de Estilo */
+
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+
+:root{
+    --primary:#225C72;
+    --contrast:#162C41;
+    --secondary:#2775A6;
+    --gray:#666666;
+    --graylight:#EEEEEE;
+
+}
+
+
+body{
+    height: 100vh;
+    margin: 0; /*espaçamento externo, usado para mover algo*/
+    /*background-color: var(--graylight);*/
+    /*background-image: url(../img/perfil.png);*/
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(var(--primary), var(--contrast));
+    overflow: hidden;/*Esconde a barra de rolagem*/
+}
+
+div{
+    width:70%;/*vai se adaptar a tela*/
+    background-color: var(--graylight);
+    max-width: 340px; /*largura maxima, logo o 70% nao vai ficar gigante.*/
+    /*a largura tem que contabilizar o padding, pois apos ser adicionado vai aumentar*/
+    /*margin-left:auto;
+    margin-right:auto para centralizar*/
+    margin:50px auto; /*o primeiro e vertical e o segundo horizontal*/
+    text-align: center;
+    padding:30px;/*usado para distanciar internamente */
+    border-radius: 10px;/*arredondamento das bordas*/
+
+}
+
+h1{
+    font-size: 32px;
+    color:var(--contrast);        
+    margin-top: 20px;
+    margin-bottom: 0;
+
+}
+
+h2{
+    margin-top:0;
+    font-size: 20px;
+    color: var(--secondary);
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 11px;
+    color: var(--gray);
+    
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+    margin-top: 41px;
+    margin-bottom: 30px;
+}
+
+li{
+    margin-bottom: 5px;
+
+}
+
+li a{
+    background-color: var(--primary);
+    color: var(--graylight);
+    display:block;/*deixa igual a um paragrafo, ocupando uma linha inteira*/
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+li a:hover{/*ao passar o mouse*/
+    background-color: var(--contrast);
+}
+
+a{
+    color: var(--primary);
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px var(--primary);
+}
+
+#app{
+    display: none;
+}
+
+@media (max-width:1279px){ /*lembrar de colocar espaço entre o media e o ()*/
+
+    #app{
+        display:block;
+    }
+    
+}
+
