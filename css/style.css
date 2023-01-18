@@ -23,7 +23,7 @@ body{
     /*background-image: url(../img/perfil.png);*/
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(var(--primary), var(--contrast));
-    /*Esconde a barra de rolagem*/
+    overflow: hidden;/*Esconde a barra de rolagem*/
 }
 
 div{
@@ -103,12 +103,11 @@ img{
 @media (max-width:1279px){ /*lembrar de colocar espaço entre o media e o ()*/
 
     #app{
-      display: block;
+        display:block;
     }
-
-    div{
-        margin: 25px auto;
-
+    
+    body{
+        overflow: auto;
     }
     
 }
