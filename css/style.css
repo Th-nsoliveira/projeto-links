@@ -24,6 +24,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(var(--primary), var(--contrast));
     overflow: hidden;/*Esconde a barra de rolagem*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div{
